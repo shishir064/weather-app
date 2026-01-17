@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class="bg-[#001231] min-h-screen flex justify-center items-center flex-col">
+    <h1 class="mb-15 text-white text-5xl font-bold">Weather forecast</h1>
+    <div class="w-full max-w-md border border-white min-h-[70vh] bg-[linear-gradient(135deg,#2dd4bf_40%,#6366f1)] flex flex-col  items-center p-8 rounded-2xl">
+        <div class="flex w-full justify-center gap-2 ">
+            <input type="text" name="countryName" id="userInput" placeholder="enter city name...." class="bg-[#ebfffb] w-[80%] px-4 py-2 rounded-2xl">
+            <button class=" rounded " id="search-btn">
+                <i class="ri-search-line bg-[#ebfffb] p-3 rounded-full"></i>
+            </button>
+        </div>
+        <img src="image/clear.svg" id="weatherIcon" class="w-[170px]" alt="">
+        <div class="flex flex-col gap-2 justify-center items-center text-white py-8">
+            <h1 class="text-5xl font-medium" id="weather-temp">0°C</h1>
+            <p class="text-4xl" id="city-name">city</p>
+        </div>
+        <div class="text-white flex gap-10 justify-center items-center text-3xl">
+            <div class="persentage flex  justify-center items-center gap-2">
+                <img src="img/humidity.png" class="w-[35px]" alt="">
+                <div>
+                    <p id="humidt-per"> 0 %</p>
+                    <p class="text-sm">humidity</p>
+                </div>
+            </div>
+            <div class="wind_spd flex justify-center items-center gap-2">
+                <img src="img/wind.png"  class="w-[35px]" alt="">
+                <div>
+                    <p id="wind-spd">0 km/h</p>
+                    <p class="text-sm">wind speed</p>
+                </div>
+            </div>
+        </div>
+
+
+    </class=>
+    <script src="script.js"></script>
+</body>
+</html>
